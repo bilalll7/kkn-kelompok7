@@ -1,0 +1,36 @@
+{
+  "name": "kkn-7-unikom-sadang-serang",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src tests *.ts *.mjs *.json README.md"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "lucide-react": "1.62.0"
+  },
+  "devDependencies": {
+    "heic-convert": "^2.1.0",
+    "prettier": "^3.6.0",
+    "@playwright/test": "^1.58.0",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
