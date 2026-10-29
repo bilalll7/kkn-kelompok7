@@ -17,10 +17,17 @@ export default function AboutPage() {
     <>
       <PageHeader {...pageContent.about} />
       <div className="wrap">
-        <Photo image={images.nature} />
         <section className="team-introduction">
-          <div className="team-mark" aria-hidden="true">
-            07<span>KKN BERDAMPAK / UNIKOM</span>
+          <div className="team-visual">
+            <Photo
+              image={{ ...images.community, fit: "cover", position: "center" }}
+              className="team-photo"
+              sizes="(max-width: 767px) 100vw, 40vw"
+            />
+            <div className="team-mark" aria-hidden="true">
+              <strong>{site.group.replace("Kelompok ", "").padStart(2, "0")}</strong>
+              <span>KKN BERDAMPAK / UNIKOM</span>
+            </div>
           </div>
           <div>
             <SectionLabel>{site.location}</SectionLabel>
