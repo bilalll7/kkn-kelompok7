@@ -8,6 +8,7 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
   const [index, setIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
+  const grid = useRef<HTMLDivElement>(null);
   const opener = useRef<HTMLButtonElement | null>(null);
   const filtered = items.filter(
     (item) => category === "Semua" || item.category === category,
@@ -22,10 +23,18 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
     if (!isOpen) return;
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    return () => {
+  return () => {
       document.body.style.overflow = previous;
     };
   }, [isOpen]);
+  useEffect(() => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const animation = grid.current?.animate(
+      [{opacity:0.35}, {opacity:1}],
+      {duration:280, easing:"ease-out"}
+    );
+    return () => animation?.cancel();
+  }, [category]);
   return (
     <>
       <div
@@ -51,7 +60,7 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
       <p className="sr-only" role="status">
         {filtered.length} foto ditampilkan
       </p>
-      <div className="gallery-grid">
+      <div ref={grid} className="gallery-grid">
         {filtered.map((item, i) => (
           <figure key={item.id}>
             <button

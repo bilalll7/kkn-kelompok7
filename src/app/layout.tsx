@@ -1,3 +1,5 @@
+import { IntroLogo } from "@/components/motion/IntroLogo";
+import { ScrollTools } from "@/components/motion/ScrollTools";
 import type { Metadata } from "next";
 import { Manrope, DM_Sans, Instrument_Serif } from "next/font/google";
 import { Header } from "@/components/layout/header";
@@ -51,9 +53,11 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Lewati ke konten utama
         </a>
+        <IntroLogo />
         <Header />
-        <main id="main-content">{children}</main>
+        <main id="main-content" tabIndex={-1}>{children}</main>
         <ScrollReveals />
+        <ScrollTools />
         <Footer />
       </body>
     </html>
