@@ -82,5 +82,12 @@ export const portraits = [
     "original": "serena.heif",
     "width": 3024,
     "height": 4032
+  },
+  {
+    "name": "Kei",
+    "src": "/images/team/avatar-empty.svg",
+    "original": null,
+    "width": 900,
+    "height": 1200
   }
 ];

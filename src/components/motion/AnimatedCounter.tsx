@@ -41,6 +41,7 @@ export function AnimatedCounter({
       }
     };
     query.addEventListener("change", change);
+    if (!query.matches && duration > 0) node.textContent = fmt(0);
     const observer = new IntersectionObserver(
       (entries) => {
         if (!entries.some((e) => e.isIntersecting) || ran) return;
@@ -51,6 +52,7 @@ export function AnimatedCounter({
           return;
         }
         const start = performance.now();
+        node.textContent = fmt(0);
         const tick = (now: number) => {
           const t = Math.min((now - start) / duration, 1);
           node.textContent = fmt(value * (1 - Math.pow(1 - t, 3)));

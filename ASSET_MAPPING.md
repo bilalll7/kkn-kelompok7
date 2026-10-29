@@ -1,5 +1,7 @@
 # Pemetaan aset klien
 
+Kei: nama dikonfirmasi pengguna; foto belum tersedia. `/images/team/avatar-empty.svg` adalah avatar generik untuk kartu Kei di `/tentang`, bukan potret orang lain.
+
 Semua foto diperiksa melalui contact sheet hasil konversi. Originals dipertahankan. Foto output WebP sudah diorientasi dan tidak membawa EXIF/GPS. Logo dipangkas pada bounding box transparan tanpa recolor. Biru #0F5FD8, kuning #F9C907 dari piksel opak terbanyak.
 
 | Original | Processed | Usage/category | Verification |

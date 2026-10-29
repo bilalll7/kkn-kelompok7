@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import { Instagram } from "@/components/instagram";
 import { site } from "@/data/site";
 import { navigation } from "@/data/navigation";
@@ -37,11 +36,8 @@ export function Footer() {
             <p>Ikuti kegiatan kami melalui Instagram.</p>
             <a href={site.instagram.url} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${site.instagram.username} (tab baru)`} className="text-link light">
               <Instagram size={18} aria-hidden="true" />
-              {site.instagram.username}
+              <span>{site.instagram.username}</span>
             </a>
-            <Link href="/kontak" className="text-link light">
-              Informasi kontak <ArrowUpRight size={16} />
-            </Link>
             {site.socialLinks.map((link) => (
               <a
                 key={link.url}

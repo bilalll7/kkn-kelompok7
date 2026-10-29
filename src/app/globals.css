@@ -2712,3 +2712,10 @@ textarea::placeholder {
  .footer nav a { min-height: 44px; }
  .footer-contact .text-link { font-size: 12px; gap: 8px; }
 }
+/* Keep footer contact actions in their own rows at every breakpoint. */
+.footer-main > * { min-width: 0; }
+.footer-contact { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.footer-contact .text-link { display: flex; flex-wrap: nowrap; max-width: 100%; gap: 8px; }
+.footer-contact .text-link svg { flex-shrink: 0; }
+.footer-contact .text-link span { min-width: 0; overflow-wrap: anywhere; }
+.footer-contact .text-link:focus-visible { outline: 2px solid var(--brand-secondary, #f9c907); outline-offset: 5px; }

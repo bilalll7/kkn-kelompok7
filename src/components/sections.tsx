@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AnimatedCounter } from "./motion/AnimatedCounter";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import { Photo, SectionLabel, TextLink } from "./ui";
 import { statistics, statisticsNote } from "@/data/statistics";
@@ -18,7 +19,7 @@ export function Statistics() {
           <div key={stat.label}>
             <dt>{stat.label}</dt>
             <dd>
-              {stat.value}
+              <AnimatedCounter value={Number(stat.value.replaceAll(".", ""))} />
               <small>{stat.unit}</small>
             </dd>
           </div>
