@@ -97,7 +97,7 @@ export const pageContent = {
     title: "Mari memulai",
     accent: "percakapan yang berarti.",
     description:
-      "Terhubung dengan KKN Berdampak Kelompok 7 UNIKOM untuk informasi, kolaborasi, atau koreksi dokumentasi. Kontak resmi tim masih menunggu konfirmasi.",
+      "Terhubung dengan KKN Berdampak Kelompok 7 UNIKOM untuk informasi, kolaborasi, atau koreksi dokumentasi. Hubungi kami melalui Instagram resmi tim.",
   },
 };
 export const assetStatus = {

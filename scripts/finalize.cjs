@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- One-off CommonJS maintenance script. */
 const fs=require('fs');const path=require('path');
 function walk(d){return fs.readdirSync(d,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(d,x.name)):[path.join(d,x.name)])}
 for(const f of walk('src').filter(f=>/tsx?$/.test(f)&&!f.endsWith('report.ts')&&!f.endsWith('report.tsx')&&!f.endsWith('programs.ts'))){let s=fs.readFileSync(f,'utf8');fs.writeFileSync(f,s)}

@@ -1,6 +1,6 @@
 import { PageHeader, SectionLabel } from "@/components/ui";
 import { Location } from "@/components/sections";
-import { ContactForm } from "@/components/contact-form";
+import { Instagram } from "@/components/instagram";
 import { site } from "@/data/site";
 import { pageMetadata } from "@/lib/metadata";
 import { pageContent } from "@/data/content";
@@ -20,42 +20,14 @@ export default function ContactPage() {
             <h2>
               Mari <em>terhubung.</em>
             </h2>
-            <dl className="contact-details">
-              <div>
-                <dt>Email</dt>
-                <dd>
-                  {site.email ? (
-                    <a href={`mailto:${site.email}`}>{site.email}</a>
-                  ) : (
-                    "Belum dikonfigurasi"
-                  )}
-                </dd>
-              </div>
-              <div>
-                <dt>Telepon</dt>
-                <dd>
-                  {site.phone ? (
-                    <a href={`tel:${site.phone}`}>{site.phone}</a>
-                  ) : (
-                    "Belum dikonfigurasi"
-                  )}
-                </dd>
-              </div>
-              <div>
-                <dt>Waktu koordinasi tim</dt>
-                <dd>{site.officeHours || "Menunggu konfirmasi"}</dd>
-              </div>
-            </dl>
-            <p className="fine-print">
-              Kontak yang telah diverifikasi akan dipublikasikan di halaman ini.
-              Situs ini belum menyediakan layanan pengaduan resmi.
-            </p>
+            <dl className="contact-details"><div><dt>Instagram</dt><dd><a className="text-link" href={site.instagram.url} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${site.instagram.username} (tab baru)`}><Instagram size={20} aria-hidden="true" />{site.instagram.username}</a></dd></div></dl>
+            <p>Ikuti kegiatan kami melalui Instagram.</p>
           </div>
           <div>
             <h2 className="form-title">
               Tinggalkan <em>sapaan.</em>
             </h2>
-            <ContactForm email={site.email} />
+            <p>Untuk informasi dan kolaborasi, hubungi kami melalui pesan langsung di Instagram.</p>
           </div>
         </section>
         <div className="section">

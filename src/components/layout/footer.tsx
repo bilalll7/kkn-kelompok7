@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import { Instagram } from "@/components/instagram";
 import { site } from "@/data/site";
 import { navigation } from "@/data/navigation";
 export function Footer() {
@@ -12,7 +13,7 @@ export function Footer() {
             <Link href="/" className="brand">
               <Image
                 src="/images/documentation/logo.png"
-                alt="Logo identitas proyek dari klien"
+                alt="Logo KKN Berdampak Kelompok 7"
                 width={40}
                 height={40}
                 style={{ objectFit: "contain" }}
@@ -33,7 +34,11 @@ export function Footer() {
           </nav>
           <div className="footer-contact">
             <span className="eyebrow">MARI TERHUBUNG</span>
-            <p>{site.email || "Kontak resmi segera dilengkapi."}</p>
+            <p>Ikuti kegiatan kami melalui Instagram.</p>
+            <a href={site.instagram.url} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${site.instagram.username} (tab baru)`} className="text-link light">
+              <Instagram size={18} aria-hidden="true" />
+              {site.instagram.username}
+            </a>
             <Link href="/kontak" className="text-link light">
               Informasi kontak <ArrowUpRight size={16} />
             </Link>

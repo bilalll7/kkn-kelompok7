@@ -193,6 +193,7 @@
   box-sizing: border-box;
 }
 html {
+  background: var(--dark);
   scroll-behavior: smooth;
   scroll-padding-top: 110px;
 }
@@ -2700,3 +2701,14 @@ textarea::placeholder {
 }
 .portrait-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem}.portrait-frame{position:relative;aspect-ratio:3/4;background:#f5f6f8;border-bottom:4px solid #f9c907;overflow:hidden}.portrait-frame img{object-fit:contain;transition:transform .4s}.portrait-grid article:hover img{transform:scale(1.025)}.portrait-grid h3{margin-top:1rem;color:#0f5fd8}@media(max-width:768px){.portrait-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}}@media(prefers-reduced-motion:reduce){.portrait-frame img{transition:none;transform:none!important}}
 
+
+/* Keep the document canvas navy during Safari rubber-band overscroll. */
+.footer-disclaimer { margin-bottom: 0; }
+.footer-contact .text-link { flex-wrap: wrap; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+ .footer-main { grid-template-columns: minmax(0, 1fr); }
+ .footer-contact { grid-column: 1 / -1; }
+ .footer nav { gap: 8px 20px; }
+ .footer nav a { min-height: 44px; }
+ .footer-contact .text-link { font-size: 12px; gap: 8px; }
+}
