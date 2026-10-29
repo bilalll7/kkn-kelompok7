@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Pause, Play } from "lucide-react";
 import type { Photograph } from "@/types";
 import { motionSettings, reducedMotionQuery } from "@/lib/motion";
 export function HeroCarousel({ slides }: { slides: Photograph[] }) {
   const [index, setIndex] = useState(0);
   const [loaded, setLoaded] = useState<number[]>([0]);
-  const [paused, setPaused] = useState(false);
   const [hover, setHover] = useState(false);
   const [focus, setFocus] = useState(false);
   const [hidden, setHidden] = useState(true);
@@ -26,7 +24,7 @@ export function HeroCarousel({ slides }: { slides: Photograph[] }) {
       document.removeEventListener("visibilitychange", visibility);
     };
   }, []);
-  const playing = !paused && !hover && !focus && !hidden && !reduced;
+  const playing = !hover && !focus && !hidden && !reduced;
   const go = (next: number) => {
     const value = (next + slides.length) % slides.length;
     setLoaded((old) => (old.includes(value) ? old : [...old, value]));
@@ -46,8 +44,6 @@ export function HeroCarousel({ slides }: { slides: Photograph[] }) {
       className="hero-carousel"
       aria-roledescription="karusel"
       aria-label="Dokumentasi kegiatan"
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
       onFocusCapture={() => setFocus(true)}
       onBlurCapture={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget)) setFocus(false);
@@ -70,7 +66,11 @@ export function HeroCarousel({ slides }: { slides: Photograph[] }) {
         touch.current = null;
       }}
     >
-      <div className="carousel-stage">
+      <div
+        className="carousel-stage"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
         {slides.map((slide, i) => (
           <div
             key={slide.src}
@@ -95,14 +95,6 @@ export function HeroCarousel({ slides }: { slides: Photograph[] }) {
         ))}
       </div>
       <div className="carousel-controls">
-        <button
-          type="button"
-          className="icon-button"
-          aria-label="Foto sebelumnya"
-          onClick={() => go(index - 1)}
-        >
-          <ArrowLeft size={18} />
-        </button>
         <div className="carousel-dots">
           {slides.map((slide, i) => (
             <button
@@ -116,26 +108,6 @@ export function HeroCarousel({ slides }: { slides: Photograph[] }) {
             </button>
           ))}
         </div>
-        <button
-          type="button"
-          className="icon-button"
-          aria-label="Foto berikutnya"
-          onClick={() => go(index + 1)}
-        >
-          <ArrowRight size={18} />
-        </button>
-        <button
-          type="button"
-          className="icon-button"
-          aria-label={
-            paused ? "Aktifkan putar otomatis" : "Jeda putar otomatis"
-          }
-          aria-pressed={paused}
-          disabled={reduced}
-          onClick={() => setPaused(!paused)}
-        >
-          {paused || reduced ? <Play size={16} /> : <Pause size={16} />}
-        </button>
       </div>
       <p
         className="carousel-caption"
