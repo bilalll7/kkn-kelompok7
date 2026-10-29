@@ -18,3 +18,6 @@ Source: `references/PPT.pdf`, 14 physical pages. Read visually because the PDF h
 The domain printed on page 4 is **berseka.id**, not berserka.id from the brief. No external link is published until ownership/domain is confirmed. Page 4 labels SI-GASLAH, with SI-GASLAH WA in its heading. Team details can be completed from page 5 after checking names and publication consent.
 
 Logo pixels sampled: RGB(15,95,216) = #0F5FD8; RGB(249,201,7) = #F9C907. These are sampled source colors, not a claim of a formal brand specification.
+
+## Profil anggota
+13 nama dan NIM dicocokkan dengan render PPT.pdf halaman 5 (references/rendered/page-5.png). Divisi dan jabatan cocok; singkatan program studi dijabarkan sesuai daftar pengguna. Foto dipetakan berdasarkan nama berkas dan alias yang diberikan pengguna. Tidak ada identifikasi wajah. Kei belum memiliki foto. Rania dipublikasikan persis sesuai sumber, tanpa penambahan nama.

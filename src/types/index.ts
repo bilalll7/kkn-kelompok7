@@ -60,6 +60,9 @@ export type RWProfile = {
   history: string | null;
   activitySlugs: string[];
 };
+export interface TeamMember {
+ id: string; slug: string; name: string; nim: string; studyProgram: string; division: string; position: string; image: string; imageAlt: string;
+}
 export type Team = {
   name: string;
   university: string;
@@ -68,6 +71,6 @@ export type Team = {
   period: string | null;
   supervisor: string | null;
   coordinator: string | null;
-  members: { name: string; role: string; studyProgram: string | null }[];
+  members: TeamMember[];
   principles: { title: string; description: string }[];
 };

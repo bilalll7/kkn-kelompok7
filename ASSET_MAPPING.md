@@ -48,3 +48,19 @@ Nama tampilan mengikuti nama berkas, bukan identifikasi wajah. Peran dalam nama 
 |rania.heic|/images/team/rania.webp|3024 × 4032|/tentang|
 |rindu.heif|/images/team/rindu.webp|3024 × 4032|/tentang|
 |serena.heif|/images/team/serena.webp|3024 × 4032|/tentang|
+
+## Profil anggota
+Nama, NIM, divisi dan jabatan dicocokkan dengan references/rendered/page-5.png (PPT.pdf halaman 5). Program studi mengikuti penjabaran pengguna. Urutan lama dipertahankan, Kei terakhir.
+- ala: Zahra Orva Lannisa → /images/team/ala.webp → /tentang/anggota/zahra-orva-lannisa
+- angga: Angga Nugraha → /images/team/angga.webp → /tentang/anggota/angga-nugraha
+- aris: Aristyan Akhsan → /images/team/aris.webp → /tentang/anggota/aristyan-akhsan
+- arya: Arya Bisma Hartono → /images/team/arya.webp → /tentang/anggota/arya-bisma-hartono
+- farid: Farid Maulana Yusuf → /images/team/farid.webp → /tentang/anggota/farid-maulana-yusuf
+- nara: Denara Anindita → /images/team/nara.webp → /tentang/anggota/denara-anindita
+- niko: Niko Adrian Farizi → /images/team/niko.webp → /tentang/anggota/niko-adrian-farizi
+- pai: Mohammad Agung Arrifai → /images/team/pai-ketua-kelompok.webp → /tentang/anggota/mohammad-agung-arrifai
+- raida: Raida Layla Safa → /images/team/raida.webp → /tentang/anggota/raida-layla-safa
+- rania: Rania → /images/team/rania.webp → /tentang/anggota/rania
+- rindu: Rindu Syurga → /images/team/rindu.webp → /tentang/anggota/rindu-syurga
+- serena: Serena Indriani → /images/team/serena.webp → /tentang/anggota/serena-indriani
+- kei: Keisha Andhara Patricia L → /images/team/avatar-empty.svg → /tentang/anggota/keisha-andhara-patricia-l

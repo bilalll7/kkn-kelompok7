@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { portraits } from "@/data/portraits";
+import Link from "next/link";
 import { Photo } from "@/components/ui";
 import { images } from "@/data/images";
 import { PageHeader, SectionLabel, TextLink } from "@/components/ui";
@@ -72,7 +72,7 @@ export default function AboutPage() {
                   <dd>{value || "Belum dikonfirmasi"}</dd>
                 </div>
               ))}
-            </dl></div></section><section className="section portrait-grid" aria-label="Anggota kelompok">{portraits.map((member) => <article key={member.src}><div className="portrait-frame"><Image src={member.src} alt={member.name} fill sizes="(max-width: 768px) 50vw, 25vw" /></div><h3>{member.name}</h3></article>)}</section></div>
+            </dl></div></section><section id="anggota" className="section portrait-grid" aria-label="Anggota kelompok">{team.members.map((member) => <article key={member.id}><Link className="member-card" href={`/tentang/anggota/${member.slug}`}><div className="portrait-frame"><Image src={member.image} alt={member.imageAlt} fill sizes="(max-width: 768px) 50vw, 25vw" /></div><h3>{member.name}</h3><p>{member.division} · {member.position}</p></Link></article>)}</section></div>
     </>
   );
 }
