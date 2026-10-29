@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { portraits } from "@/data/portraits";
 import { Photo } from "@/components/ui";
 import { images } from "@/data/images";
 import { PageHeader, SectionLabel, TextLink } from "@/components/ui";
@@ -53,8 +55,7 @@ export default function AboutPage() {
               <em>di balik perjalanan.</em>
             </h2>
             <p className="muted">
-              Identitas anggota dipublikasikan setelah dikonfirmasi dan mendapat
-              persetujuan.
+              Kenali mahasiswa KKN Berdampak Kelompok 7 UNIKOM yang berkolaborasi bersama masyarakat RW 12 dan RW 13, Sadang Serang.
             </p>
           </div>
           <div>
@@ -71,25 +72,9 @@ export default function AboutPage() {
                   <dd>{value || "Belum dikonfirmasi"}</dd>
                 </div>
               ))}
-            </dl>
-            {team.members.length ? (
-              <ul className="simple-list">
-                {team.members.map((member) => (
-                  <li key={member.name}>
-                    {member.name} · {member.role}
-                    {member.studyProgram && ` · ${member.studyProgram}`}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="sample-note">
-                Daftar anggota dan program studi belum tersedia untuk
-                dipublikasikan.
-              </p>
-            )}
-          </div>
-        </section>
-      </div>
+            </dl></div></section><section className="section portrait-grid" aria-label="Anggota kelompok">{portraits.map((member) => <article key={member.src}><div className="portrait-frame"><Image src={member.src} alt={member.name} fill sizes="(max-width: 768px) 50vw, 25vw" /></div><h3>{member.name}</h3></article>)}</section></div>
     </>
   );
 }
+
+

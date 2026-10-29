@@ -11,7 +11,7 @@ export function Statistics() {
     <section className="statistics wrap" aria-label="Statistik wilayah">
       <div className="stats-top">
         <SectionLabel>Wilayah dalam angka</SectionLabel>
-        <span className="status-label">Menunggu data terverifikasi</span>
+        <span className="status-label">RW 12 & RW 13</span>
       </div>
       <dl className="stats-grid">
         {statistics.map((stat) => (
@@ -90,7 +90,7 @@ export function Location({ compact = false }: { compact?: boolean }) {
         </h2>
         <p>
           {site.address ||
-            `${site.location}. Alamat rinci dan titik lokasi belum dikonfirmasi.`}
+            `${site.location}, Bandung.`}
         </p>
         <p className="muted">
           {site.region ||
@@ -117,9 +117,9 @@ export function Location({ compact = false }: { compact?: boolean }) {
         {site.mapsEmbedUrl ? (
           <iframe
             src={site.mapsEmbedUrl}
-            title={`Peta lokasi ${site.name}`}
+            title="Peta Wilayah KKN Sadang Serang RW 12 dan RW 13"
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
         ) : (

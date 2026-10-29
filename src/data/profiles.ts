@@ -8,10 +8,7 @@ export const rwProfiles: RWProfile[] = [
       "Salah satu wilayah kolaborasi KKN Berdampak Kelompok 7 UNIKOM di Sadang Serang. Profil ini menjadi ruang untuk mengenal lingkungan dan informasi warga secara bertahap.",
     focus:
       "Poswindu RW 12 tercantum dalam kategori dokumentasi yang diberikan. Ejaan kegiatan, rincian pelaksanaan, dan keterlibatan tim masih perlu dikonfirmasi.",
-    leader: null,
-    population: null,
-    households: null,
-    rtCount: null,
+    leader: "Nandang", population: 613, households: 175, rtCount: 4,
     area: null,
     boundaries: null,
     history: null,
@@ -25,10 +22,7 @@ export const rwProfiles: RWProfile[] = [
       "Wilayah kolaborasi KKN Berdampak Kelompok 7 UNIKOM bersama masyarakat Sadang Serang. Informasi lokal akan dilengkapi melalui konfirmasi warga dan pengurus wilayah.",
     focus:
       "Posyandu RW 13 tercantum dalam kategori dokumentasi yang diberikan. Tanggal, lokasi rinci, dan peran tim akan dipublikasikan setelah diverifikasi.",
-    leader: null,
-    population: null,
-    households: null,
-    rtCount: null,
+    leader: "Kusnun", population: 1100, households: 304, rtCount: 7,
     area: null,
     boundaries: null,
     history: null,

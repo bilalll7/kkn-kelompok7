@@ -28,3 +28,21 @@ Semua foto diperiksa melalui contact sheet hasil konversi. Originals dipertahank
 | rw13(1).HEIC | public/images/documentation/heic-23.webp | Arsip diproses; tidak dipublikasikan dalam UI | Isi visual ditinjau; tanggal/identitas/izin perlu konfirmasi |
 | rw13.HEIC | public/images/documentation/heic-21.webp | Arsip diproses; tidak dipublikasikan dalam UI | Isi visual ditinjau; tanggal/identitas/izin perlu konfirmasi |
 | rw13.heif | public/images/documentation/heic-22.webp | Arsip diproses; tidak dipublikasikan dalam UI | Isi visual ditinjau; tanggal/identitas/izin perlu konfirmasi |
+
+## Potret anggota
+Nama tampilan mengikuti nama berkas, bukan identifikasi wajah. Peran dalam nama berkas tidak digunakan.
+
+|Asli|WebP|Dimensi sumber|Penggunaan|
+|---|---|---|---|
+|ala.heif|/images/team/ala.webp|3024 × 4032|/tentang|
+|angga.heif|/images/team/angga.webp|3024 × 4032|/tentang|
+|aris.heif|/images/team/aris.webp|3024 × 4032|/tentang|
+|arya.heif|/images/team/arya.webp|3024 × 4032|/tentang|
+|farid.heif|/images/team/farid.webp|3024 × 4032|/tentang|
+|nara.heif|/images/team/nara.webp|3024 × 4032|/tentang|
+|niko.heif|/images/team/niko.webp|3024 × 4032|/tentang|
+|pai ketua kelompok.heif|/images/team/pai-ketua-kelompok.webp|3024 × 4032|/tentang|
+|raida.heif|/images/team/raida.webp|3024 × 4032|/tentang|
+|rania.heic|/images/team/rania.webp|3024 × 4032|/tentang|
+|rindu.heif|/images/team/rindu.webp|3024 × 4032|/tentang|
+|serena.heif|/images/team/serena.webp|3024 × 4032|/tentang|

@@ -7,9 +7,9 @@ export const team: Team = {
     "Kami adalah Kelompok 7 KKN Berdampak Universitas Komputer Indonesia. Ruang ini mempertemukan profil RW 12 dan RW 13 dengan dokumentasi kolaborasi kami bersama masyarakat Sadang Serang.",
   description:
     "Kami ingin menghadirkan cerita yang dekat dengan warga: mengenal lingkungan, mendengar kebutuhan, dan mendokumentasikan proses bersama. Informasi program serta kegiatan disajikan dengan membedakan hal yang sudah diketahui dan yang masih perlu dikonfirmasi.",
-  period: null,
-  supervisor: null,
-  coordinator: null,
+  period: "Juli – Oktober 2026",
+  supervisor: "Assoc. Prof. Dr. Sri Dewi Anggadini, S.E., M.Si., Ak., CA",
+  coordinator: "Ayu Kusuma",
   members: [],
   principles: [
     {

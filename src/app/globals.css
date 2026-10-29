@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 .hero-carousel {
   min-width: 0;
@@ -835,7 +835,7 @@ svg {
   color: var(--green);
 }
 .article-meta time::before {
-  content: "·";
+  content: "Â·";
   margin-right: 12px;
 }
 .article-card h3 {
@@ -2698,3 +2698,5 @@ textarea::placeholder {
 .rw-detail .photo {
   margin-top: 24px;
 }
+.portrait-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem}.portrait-frame{position:relative;aspect-ratio:3/4;background:#f5f6f8;border-bottom:4px solid #f9c907;overflow:hidden}.portrait-frame img{object-fit:contain;transition:transform .4s}.portrait-grid article:hover img{transform:scale(1.025)}.portrait-grid h3{margin-top:1rem;color:#0f5fd8}@media(max-width:768px){.portrait-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}}@media(prefers-reduced-motion:reduce){.portrait-frame img{transition:none;transform:none!important}}
+

@@ -4,7 +4,6 @@ import { images } from "@/data/images";
 import {
   PageHeader,
   SectionLabel,
-  SampleNote,
   TextLink,
 } from "@/components/ui";
 import { rwProfiles } from "@/data/profiles";
@@ -53,7 +52,7 @@ export default function ProfilePage() {
                   ["Ketua RW", rw.leader],
                   [
                     "Jumlah penduduk",
-                    rw.population === null ? null : `${rw.population} jiwa`,
+                    rw.population === null ? null : `${rw.population.toLocaleString("id-ID")} jiwa`,
                   ],
                   [
                     "Kepala keluarga",
@@ -62,17 +61,14 @@ export default function ProfilePage() {
                   ["Jumlah RT", rw.rtCount],
                   ["Luas wilayah", rw.area],
                   ["Batas wilayah", rw.boundaries],
-                ].map(([label, value]) => (
+                ].filter(([, value]) => value != null).map(([label, value]) => (
                   <div key={label}>
                     <dt>{label}</dt>
                     <dd>{value ?? "Belum dikonfirmasi"}</dd>
                   </div>
                 ))}
               </dl>
-              <SampleNote>
-                Data demografi, batas, dan sejarah wilayah belum tersedia dari
-                sumber terverifikasi.
-              </SampleNote>
+              
               <h3 className="rw-focus-title">Ruang dokumentasi</h3>
               <p className="muted">{rw.focus}</p>
               {rw.activitySlugs.map((slug) => (

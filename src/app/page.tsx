@@ -4,7 +4,7 @@ import { heroSlides } from "@/data/hero-slides";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Photo, SectionLabel, TextLink } from "@/components/ui";
-import { ArticleCard, Location } from "@/components/sections";
+import { ArticleCard, Location, Statistics } from "@/components/sections";
 import { site } from "@/data/site";
 import { home } from "@/data/content";
 import { team } from "@/data/team";
@@ -228,6 +228,7 @@ export default function Home() {
           <p className="fine-print">{site.contentNotice}</p>
         </div>
       </section>
+      <Statistics />
       <Report />
       <div className="wrap section">
         <Location compact />
