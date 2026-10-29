@@ -1,5 +1,6 @@
 import { images } from "./images";
 export const heroSlides = [
+  images.teamGathering,
   images.community,
   images.village,
   images.nature,

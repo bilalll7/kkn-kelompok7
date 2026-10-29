@@ -8,6 +8,7 @@ const photo = (file: string, alt: string): Photograph => ({
   fit: "contain",
 });
 export const images = {
+  teamGathering: photo("heic-14.webp", "Dokumentasi kelompok KKN Berdampak Kelompok 7"),
   community: photo(
     "06.webp",
     "Pertemuan mahasiswa bersama warga; berkas mapping RW 13",
